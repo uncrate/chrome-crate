@@ -10,11 +10,11 @@ end
 
 case node['platform']
 when "debian", "ubuntu"
-  dpkg_package "Google chrome" do
+  include_recipe "gdebi"
+
+  gdebi_package "Google chrome" do
     source chrome_package_filepath
   end
-else
-  rpm_package "Google chrome" do
-    source chrome_package_filepath
-  end
+when ("centos", "redhat")
+  raise "CentOS/Redhat are not supported (see https://github.com/uncrate/chrome-crate/issues/1)"
 end
