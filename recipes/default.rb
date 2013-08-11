@@ -15,6 +15,6 @@ when "debian", "ubuntu"
   gdebi_package "Google chrome" do
     source chrome_package_filepath
   end
-when ("centos", "redhat")
+when "centos", "redhat"
   raise "CentOS/Redhat are not supported (see https://github.com/uncrate/chrome-crate/issues/1)"
 end
