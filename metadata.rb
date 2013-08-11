@@ -7,8 +7,6 @@ version          '0.1.0'
 %w{
   debian
   ubuntu
-  centos
-  redhat
 }.each do |os|
   supports os
 end
