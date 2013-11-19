@@ -21,7 +21,8 @@ when "centos", "redhat", "debian", "ubuntu"
     raise "CentOS/Redhat are not supported (see https://github.com/uncrate/chrome-crate/issues/1)"
   end
 when "mac_os_x"
-  dmg_package 'chrome' do
+  dmg_package 'Google Chrome' do
+    dmg_name 'googlechrome'
     source node['chrome']['download_url']
     action :install
   end

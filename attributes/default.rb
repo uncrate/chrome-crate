@@ -2,7 +2,7 @@ default['chrome']['deb64_download_url'] = 'https://dl.google.com/linux/direct/go
 default['chrome']['deb32_download_url'] = 'https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb'
 default['chrome']['rpm64_download_url'] = 'https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
 default['chrome']['rpm32_download_url'] = 'https://dl.google.com/linux/direct/google-chrome-stable_current_i386.rpm'
-default['chrome']['mac_os_x_download_url'] = 'http://dl.google.com/chrome/mac/stable/GoogleChrome.dmg'
+default['chrome']['mac_os_x_download_url'] = 'http://dl.google.com/chrome/mac/stable/googlechrome.dmg'
 
 arch = node['kernel']['machine'] =~ /x86_64/ ? "x86_64" : "i386"
 
